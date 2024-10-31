@@ -5,7 +5,12 @@ module.exports = {
     "./.{html, js}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bebas: ['"Bebas Neue"', 'cursive'],
+      },
+
+    },
   },
   plugins: [],
 };
