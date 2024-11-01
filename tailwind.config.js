@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         bebas: ['"Bebas Neue"', 'cursive'],
+        bona: ['Bona Nova SC', 'serif'],
+
       },
 
     },
