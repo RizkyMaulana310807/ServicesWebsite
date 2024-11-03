@@ -3,7 +3,7 @@
     "tailwindcss": "^3.4.14"
   },
   "scripts": {
-    "watch:css": "npx tailwindcss -i ./dist/input.css -o ./dist/output.css --watch --minify"
+    "watch:css": "npx tailwindcss -i ./dist/input.css -o ./css/output.css --watch --minify"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
