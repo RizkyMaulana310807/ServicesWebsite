@@ -45,7 +45,7 @@
             <!-- Brand / Logo -->
             <div class="flex flex-row items-center gap-2 h-12">
                 <img class="w-9 h-9 object-cover rounded-full border-2 border-transparent hover:border-black duration-200 transition-all ease-in-out" src="img/logo/logo.png" alt="Logo-brand.png">
-                <h1 class="text-black">Akira Solution</h1>
+                <h1 class="text-black">CodeX Solution</h1>
             </div>
             <!-- User Interactive -->
             <div class="flex flex-row gap-4 items-center">
@@ -62,8 +62,8 @@
                     <p class="text-md font-['Roboto'] text-slate-600">Temukan solusi it anda. kami menawarkan jasa di bidang it yang mungkin anda sedang membutuhkanya!</p>
                 </div>
                 <div class="flex flex-row gap-6 justify-center">
-                    <button class="px-9 py-3 text-lg border-2 border-black rounded-lg hover:bg-black hover:text-white shadow-xl hover:shadow-lg hover:scale-110 transition-all ease-in-out duration-300">Button</button>
-                    <button class="px-9 py-3 text-lg border-2 border-black rounded-lg hover:bg-black hover:text-white shadow-xl hover:shadow-lg hover:scale-110 transition-all ease-in-out duration-300">Button</button>
+                    <button class="px-9 py-3 text-lg border-2 border-black rounded-lg hover:bg-black hover:text-white shadow-xl hover:shadow-lg hover:scale-110 transition-all ease-in-out duration-300">Developer</button>
+                    <button class="px-9 py-3 text-lg border-2 border-black rounded-lg hover:bg-black hover:text-white shadow-xl hover:shadow-lg hover:scale-110 transition-all ease-in-out duration-300">IT Solutions</button>
                 </div>
                 <div class="flex flex-row gap-9 justify-center">
                     <div class="text-center px-5">
@@ -389,6 +389,7 @@
     <div class="border-3"></div>
 
     <script>
+        document.getElementById('start').scrollIntoView({behavior: 'smooth'});
         window.addEventListener('DOMContentLoaded', () => {
             const navbar = document.getElementById('navbar');
             const userIcon = document.getElementById('userIcon');
