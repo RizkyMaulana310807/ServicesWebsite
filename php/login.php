@@ -7,7 +7,7 @@ if (isset($_COOKIE[$cookie_name])) {
     header("Location: ../index.php");
     // echo "Cookie '$cookie_name' ditemukan dengan nilai: " . $_COOKIE[$cookie_name];
 } else {
-    echo "Cookie '$cookie_name' tidak ditemukan.";
+    // echo "Cookie '$cookie_name' tidak ditemukan.";
 }
 ?>
 
@@ -68,12 +68,12 @@ if (isset($_COOKIE[$cookie_name])) {
                                         <input type="text" id="logInPass" name="logInPass" class="bg-green-50 border text-sm rounded-lg block w-full px-4 py-2" placeholder="password">
                                         <!-- <p class="hidden mt-2 text-sm"><span class="font-medium text-white">Well done!</span> Some success message.</p> -->
                                     </div>
-                                    <div class="flex items-start mt-5">
-                                        <div class="flex items-center h-5">
-                                            <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-                                        </div>
-                                        <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-                                    </div>
+                                    <!-- <div class="flex items-start mt-5"> -->
+                                        <!-- <div class="flex items-center h-5"> -->
+                                            <!-- <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" /> -->
+                                        <!-- </div> -->
+                                        <!-- <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label> -->
+                                    <!-- </div> -->
                                 </div>
                                 <div id="result" class="text-red-500">
 
@@ -161,15 +161,15 @@ if (isset($_COOKIE[$cookie_name])) {
                 if (xhr.status === 200) {
                     // Jika berhasil, tampilkan respons dari PHP
                     // document.getElementById('result').innerText = xhr.responseText; // Perbaikan di sini
-                    console.log(xhr.responseText);
-                    if (xhr.responseText == "Benar") {
+                    // console.log(xhr.responseText);
+                    // if (xhr.responseText == "Benar") {
                         window.location.href = "../index.php";
                         // document.getElementById('result').innerText = "Benar";
                         // console.log("Masuk respon pertama");
-                    } else if (xhr.responseText == "Salah") {
-                        document.getElementById('result').innerText = "Username atau Password salah!"; // Perbaikan di sini
+                    // } else if (xhr.responseText == "Salah") {
+                        // document.getElementById('result').innerText = "Username atau Password salah!"; // Perbaikan di sini
                         // console.log("Masuk respon kedua");
-                    }
+                    // }
 
 
                 } else {

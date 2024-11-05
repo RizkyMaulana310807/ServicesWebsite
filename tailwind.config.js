@@ -12,6 +12,10 @@ module.exports = {
         bebas: ['"Bebas Neue"', 'cursive'],
         bona: ['Bona Nova SC', 'serif'],
       },
+      screens: {
+        xs: { max: '640px' },
+        xxs: { max: '375px' },
+      },
     },
   },
   plugins: [],

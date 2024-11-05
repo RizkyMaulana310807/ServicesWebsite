@@ -304,61 +304,61 @@ $count_selesai_drop = $result_selesai_drop->fetch_assoc()['count'];
 
                     <!-- Form Tambah Order -->
                     <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-        <h4 class="text-xl font-semibold mb-4">Add New Order</h4>
-        <form id="addOrderForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-                <label for="customerName" class="block text-sm font-medium text-gray-700 mb-1">Customer Name</label>
-                <input type="text" id="customerName" name="customerName" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-            <div>
-                <label for="orderDate" class="block text-sm font-medium text-gray-700 mb-1">Order Date</label>
-                <input type="date" id="orderDate" name="orderDate" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-            <div class="md:col-span-2">
-                <label for="orderItems" class="block text-sm font-medium text-gray-700 mb-1">Order Items</label>
-                <textarea id="orderItems" name="orderItems" rows="3" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-            </div>
-            <div>
-                <label for="totalAmount" class="block text-sm font-medium text-gray-700 mb-1">Total Amount</label>
-                <input type="number" id="totalAmount" name="totalAmount" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-            <div class="md:col-span-2">
-                <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200">
-                    Add Order
-                </button>
-            </div>
-        </form>
-    </div>
+                        <h4 class="text-xl font-semibold mb-4">Add New Order</h4>
+                        <form id="addOrderForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="customerName" class="block text-sm font-medium text-gray-700 mb-1">Customer Name</label>
+                                <input type="text" id="customerName" name="customerName" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="orderDate" class="block text-sm font-medium text-gray-700 mb-1">Order Date</label>
+                                <input type="date" id="orderDate" name="orderDate" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="orderItems" class="block text-sm font-medium text-gray-700 mb-1">Order Items</label>
+                                <textarea id="orderItems" name="orderItems" rows="3" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <div>
+                                <label for="totalAmount" class="block text-sm font-medium text-gray-700 mb-1">Total Amount</label>
+                                <input type="number" id="totalAmount" name="totalAmount" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="md:col-span-2">
+                                <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200">
+                                    Add Order
+                                </button>
+                            </div>
+                        </form>
+                    </div>
 
-    <!-- List Order -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
-        <h4 class="text-xl font-semibold mb-4">Order List</h4>
-        <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200">
-                <thead class="bg-gray-50">
-                    <tr>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Customer</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white divide-y divide-gray-200">
-                    <!-- Sample order, repeat or generate dynamically -->
-                    <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">John Doe</td>
-                        <td class="px-6 py-4 whitespace-nowrap">2023-05-15</td>
-                        <td class="px-6 py-4 whitespace-nowrap">$150.00</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                            <button onclick="showModal('edit', 1)" class="text-indigo-600 hover:text-indigo-900 mr-2">Edit</button>
-                            <button onclick="showModal('delete', 1)" class="text-red-600 hover:text-red-900">Delete</button>
-                        </td>
-                    </tr>
-                    <!-- Add more order items here -->
-                </tbody>
-            </table>
-        </div>
-    </div>
+                    <!-- List Order -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold mb-4">Order List</h4>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Customer</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    <!-- Sample order, repeat or generate dynamically -->
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">John Doe</td>
+                                        <td class="px-6 py-4 whitespace-nowrap">2023-05-15</td>
+                                        <td class="px-6 py-4 whitespace-nowrap">$150.00</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                            <button onclick="showModal('edit', 1)" class="text-indigo-600 hover:text-indigo-900 mr-2">Edit</button>
+                                            <button onclick="showModal('delete', 1)" class="text-red-600 hover:text-red-900">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more order items here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
 
                     <!-- Modal for Edit/Delete -->

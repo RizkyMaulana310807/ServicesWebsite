@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 // Mengatur cookie dengan path yang sesuai
                 setcookie($cookie_name, $cookie_value, $cookie_lifetime, "/"); // "/" untuk seluruh domain
+                header('Location: ../../index.php');
 
                 // Memeriksa apakah cookie telah diset
                 if (isset($_COOKIE[$cookie_name])) {
