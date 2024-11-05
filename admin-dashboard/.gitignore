@@ -1,0 +1,14 @@
+# Contoh file .gitignore untuk proyek PHP
+
+# Direktori cache
+/cache/*
+
+# File konfigurasi
+config.ini
+database.config.php
+
+# File log
+*.log
+
+# File koneksi database
+koneksi.php
